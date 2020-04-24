@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+	<!-- Custom fonts for this template-->
+  	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  	<!-- Page level plugin CSS-->
+  	<link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  	<!-- Custom styles for this template-->
+  	<link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1 class="mt-4">Ingreso de nuevo alumno</h1>
+		<div class="card mb-4">
+           	<div class="card-body">
+           		<form method="post" th:action="@{/parametros1}">
+            		<div class="form-group">
+            			<label class="small mb-1" for="usuario">Nombres</label>
+            			<input class="form-control py-4" id="nombres" type="text" placeholder="Ingrese nombre/s" style="width: 400px" name="nombres"/>
+           			</div>
+           			
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Apellidos</label>
+                    	<input class="form-control py-4" id="apellidos" type="text" placeholder="Ingrese apellido/s" style="width: 400px" name="apellidos"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Fecha de nacimiento</label>
+                    	<input class="form-control py-4" id="Fnacimiento" type="date" required placeholder="Ingrese fecha" style="width: 400px" name="Fnacimiento"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Lugar de nacimiento</label>
+                    	<input class="form-control py-4" id="Lnacimiento" type="text" placeholder="Ingrese lugar" style="width: 400px" name="Lnacimiento"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Instituto de procedencia</label>
+                    	<input class="form-control py-4" id="colegio" type="text" placeholder="Ingrese instituto" style="width: 400px" name="colegio"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Telefono fijo</label>
+                    	<input class="form-control py-4" id="Tfijo" type="number" placeholder="Ingrese telefono" style="width: 400px" name="Tfijo"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<label class="small mb-1" for="usuario">Telefono movil</label>
+                    	<input class="form-control py-4" id="Tmovil" type="number" placeholder="Ingrese celular" style="width: 400px" name="Tmovil"/>
+                    </div>
+                    
+                    <div class="form-group">
+                    	<input type="submit" class="btn btn-primary" value="Guardar alumno">
+                   	</div>
+                </form>
+           	</div>
+		</div>
+	
+    
+  
+  
+  
+  
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+  
+</body>
+</html>
